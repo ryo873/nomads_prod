@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nomads</title>
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="frontend/styles/style_detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container fixed-top">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+          <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+            <a href="index.html" class="navbar-brand">
+              <img src="frontend/images/logo_nomads.png" alt="logo_nomads" />
+            </a>
+          </div>
+          <ul class="navbar-nav mr-auto d-none d-lg-block">
+            <li>
+              <span class="text-muted">| &nbsp; Beyond the explorer of the world</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="section-success d-flex align-item-center">
+        <div class="col text-center">
+          <img src="frontend/images/email_ic.png" alt="email" />
+          <h1>Yay! Success</h1>
+          <p>
+            We've sent you email for trip instruction <br />
+            please read it as well
+          </p>
+          <a href="index.html" class="btn btn-home-page mt-3 px-5">Home Page</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script src="frontend/scripts/jquery-3.6.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomwidth: 500,
+          title: false,
+          tint: "#333",
+          xoffset: 15,
+        });
+      });
+
+      // $(".datepicker").datepicker({
+      //   uilibrary: "bootstrap4",
+      //   // icons: {
+      //   //   rightIcon: '<img src="frontend/images/calendar_ic.png"/>',
+      //   // },
+      // });
+
+      $(".datepicker").datepicker({
+        uiLibrary: "bootstrap4",
+        // icons: {
+        //   rightIcon: '<img src="frontend/images/calendar_ic.png" width="20px"/>',
+        // },
+      });
+    </script>
+  </body>
+</html>

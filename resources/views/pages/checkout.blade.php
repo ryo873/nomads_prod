@@ -261,7 +261,7 @@
                                 <a
                                     href="{{ route('checkout-confirm', $item->id ) }}"
                                     class="btn btn-block btn-join-now mt-3 py-2"
-                                    >I Have Made Payment</a
+                                    >Process Payment</a
                                 >
                             </div>
                             <div class="text-center mt-3">

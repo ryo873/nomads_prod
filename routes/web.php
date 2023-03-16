@@ -50,3 +50,8 @@ Route::prefix('admin')
 });
 
 Auth::routes(['verify' => true]);
+
+Route::post('/midtrans/callback', 'MidtransController@handleNotification');
+Route::get('/midtrans/finish', 'MidtransController@finishRedirect');
+Route::get('/midtrans/unfinish', 'MidtransController@unfinishRedirect');
+Route::get('/midtrans/error', 'MidtransController@errorRedirect');
